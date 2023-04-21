@@ -1,0 +1,149 @@
+.slide-1 {
+	// .slide-1__text
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: flex-start;
+		text-transform: uppercase;
+		margin: 162px 0 0 65px;
+		color: #171717;
+		h1 {
+			font-family: dinpro;
+			font-size: 26px;
+			margin: 0 0 20px 0;
+			z-index: 1;
+		}
+		h2 {
+			font-size: 110px;
+			font-family: gilroy;
+			line-height: 117px;
+			letter-spacing: 5.4px;
+			z-index: 2;
+			& span {
+				font-family: gilro_bold;
+			}
+		}
+	}
+	&__sperm {
+		&-1 {
+			position: absolute;
+			height: 90px;
+			top: 155px;
+			left: 432px;
+			z-index: 3;
+		}
+
+		&-2 {
+			position: absolute;
+			height: 130px;
+			left: 0;
+			top: 605px;
+		}
+	}
+
+	&__bacteria {
+		&-1 {
+			animation-name: scale4;
+			animation-duration: 10s;
+			animation-timing-function: ease;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			position: absolute;
+			height: 250px;
+			z-index: 10;
+
+			&-wrap {
+				animation-name: move4;
+				animation-duration: 10s;
+				animation-timing-function: ease;
+				animation-delay: 0s;
+				animation-iteration-count: infinite;
+				animation-direction: normal;
+				position: absolute;
+				height: 150px;
+				left: 540px;
+				top: 618px;
+			}
+		}
+		&-2 {
+			position: absolute;
+			height: 60px;
+			left: 350px;
+			top: 650px;
+		}
+		&-3 {
+			position: absolute;
+			height: 60px;
+			left: 940px;
+			top: 30px;
+		}
+		&-4 {
+			animation-name: move2;
+			animation-duration: 10s;
+			animation-timing-function: ease;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			position: absolute;
+			height: 60px;
+			left: 740px;
+			top: 70px;
+			z-index: 9;
+		}
+		&-5 {
+			animation-name: rotate1;
+			animation-duration: 10s;
+			animation-timing-function: ease;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			position: absolute;
+			height: 110px;
+			z-index: 10;
+
+			&-wrap {
+				animation-name: move1;
+				animation-duration: 10s;
+				animation-timing-function: ease;
+				animation-delay: 0s;
+				animation-iteration-count: infinite;
+				animation-direction: normal;
+				position: absolute;
+				height: 110px;
+				left: 800px;
+				top: 160px;
+				z-index: 10;
+			}
+		}
+		&-6 {
+			animation-name: move3;
+			animation-duration: 10s;
+			animation-timing-function: ease;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			position: absolute;
+			height: 70px;
+			left: 23px;
+			top: 504px;
+		}
+	}
+	&__stiсk {
+		position: absolute;
+		height: 120px;
+		left: 0;
+		top: 75px;
+		z-index: 3;
+	}
+
+	&__btn-next {
+		position: absolute;
+		height: 80px;
+		top: 460px;
+		left: 630px;
+		z-index: 10;
+	}
+}

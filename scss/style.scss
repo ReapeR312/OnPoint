@@ -1,0 +1,58 @@
+@import "reset";
+@import "fonts";
+@import "slide-1";
+@import "slide-2";
+@import "slide-3";
+@import "animations";
+.slider {
+	height: 768px;
+	width: 1024px;
+	overflow: hidden;
+
+	// .slider__header
+	&__header {
+		display: flex;
+		position: absolute;
+		left: 0;
+		padding: 25px 0 0 70px;
+		z-index: 50;
+		& img {
+			height: 20px;
+		}
+	}
+
+	// .slider__slide-1
+
+	&__slide {
+		&-1 {
+			background-image: url(/img/1_slide/bg-1.png);
+			background-size: cover;
+		}
+
+		// .slider__slide-2
+		&-2 {
+			background-image: url(/img/2_slide/bg-2.png);
+			background-size: cover;
+		}
+
+		// .slider__slide-3
+		&-3 {
+			background-image: url(/img/3_slide/bg-3.png);
+			background-size: cover;
+		}
+	}
+	// .slider__footer
+	&__footer {
+		position: absolute;
+		left: 70px;
+		bottom: 12px;
+		z-index: 20;
+		& img {
+			height: 13px;
+		}
+	}
+}
+
+.slide {
+	overflow: hidden;
+}

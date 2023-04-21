@@ -1,0 +1,135 @@
+.slide-2 {
+	font-family: dinpro;
+	line-height: 1.37;
+	&__wrap {
+		position: absolute;
+		bottom: 80px;
+		left: calc(1024px + 70px);
+	}
+
+	&__title {
+		padding: 0 0 60px 0;
+		font-size: 26px;
+		width: 100px;
+		color: #242424;
+		text-transform: uppercase;
+	}
+
+	// .slide-2__about
+
+	&__scroll-box {
+		position: relative;
+		direction: rtl;
+		font-size: 22px;
+		width: 750px;
+		height: 426px;
+		padding: 10px 0 0 58px;
+		text-align: end;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		z-index: 4;
+		span {
+			font-family: dinpro_bold;
+		}
+
+		&::-webkit-scrollbar {
+			margin-right: 20px;
+			width: 20px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #cf578d;
+			border-radius: 100px;
+			box-shadow: inset -9px -3px 7px -6px #fff, inset 8px 3px 4px 0 #8e406a;
+		}
+		&::-webkit-scrollbar-track {
+			background-clip: content-box;
+			background-color: #000;
+			border: 8px solid transparent;
+			border-radius: 20px;
+			box-sizing: border-box;
+		}
+	}
+	&__sperm {
+		&-1 {
+			display: block;
+			animation-name: move5;
+			animation-duration: 4.5s;
+			animation-timing-function: ease;
+			animation-delay: 0;
+			animation-iteration-count: 1;
+			animation-direction: normal;
+			position: absolute;
+			height: 290px;
+			left: 1374px;
+			top: 100px;
+			opacity: 0.9;
+		}
+		&-2 {
+			animation-name: move6;
+			animation-duration: 4.5s;
+			animation-timing-function: ease;
+			animation-delay: 0;
+			animation-iteration-count: 1;
+			animation-direction: normal;
+			position: absolute;
+			height: 230px;
+			left: 1600px;
+			top: 90px;
+			opacity: 0.6;
+		}
+		&-3 {
+			animation-name: move7;
+			animation-duration: 5s;
+			animation-timing-function: ease;
+			animation-delay: 0;
+			animation-iteration-count: 1;
+			animation-direction: normal;
+			position: absolute;
+			height: 113px;
+			left: 1750px;
+			top: 65px;
+			opacity: 0.5;
+		}
+		&-4 {
+			animation-name: move8;
+			animation-duration: 5s;
+			animation-timing-function: ease;
+			animation-delay: 0;
+			animation-iteration-count: 1;
+			animation-direction: normal;
+			position: absolute;
+			height: 200px;
+			left: 1934px;
+			top: 420px;
+			opacity: 0.4;
+		}
+		&-5 {
+			animation-name: move9;
+			animation-duration: 5.5s;
+			animation-timing-function: ease;
+			animation-delay: 0;
+			animation-iteration-count: 1;
+			animation-direction: normal;
+			position: absolute;
+			height: 87px;
+			left: 1930px;
+			top: 530px;
+			opacity: 0.3;
+		}
+	}
+}
+.scroll-box {
+	margin-left: 8px;
+	&__bg {
+		position: fixed;
+		background: #fff;
+		width: 790px;
+		height: 460px;
+		border-bottom: 14px solid #fff;
+		border-radius: 40px;
+		box-shadow: 0 0 100px 41px rgb(20 60 90 / 20%);
+		margin: -20px 0 0 50px;
+		color: #171717;
+		z-index: 3;
+	}
+}
